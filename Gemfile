@@ -11,12 +11,14 @@ gem 'redis'
 
 gem 'sass-rails'
 gem 'jquery-rails'
+gem 'jquery-easing-rails'
 gem 'uglifier'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
 gem 'friendly_id', '~> 5.1.0'
+
 
 group :development, :test do
   gem 'binding_of_caller'

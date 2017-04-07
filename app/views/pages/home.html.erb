@@ -1,2 +1,158 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7">
+                <div class="header-content">
+                    <div class="header-content-inner">
+                        <h1>Eventualii is a simple todo list app that will help you organize and stay on top of your tasks!</h1>
+                        <%= link_to "Start Now for Free!", new_user_registration_path, class: "btn btn-outline btn-xl page-scroll" %>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <div class="device-container">
+                    <div class="device-mockup iphone6_plus portrait white">
+                        <div class="device">
+                            <div class="screen">
+                                <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                                <%= image_tag('check_mark', class: "img-responsive") %>
+                            </div>
+                            <div class="button">
+                                <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="download" class="download bg-primary text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h2 class="section-heading">Discover what all the buzz is about!</h2>
+                <p>Eventualii is NOT available for download in the App Store or Google Play.
+                <br>... but we can pretend!</p>
+                <div class="badges">
+                    <a class="badge-link" href="https://play.google.com/store/apps/category/PRODUCTIVITY"><%= image_tag "google-play-badge.svg" %></a>
+                    <a class="badge-link" href="https://itunes.apple.com/us/genre/ios-productivity/id6007?mt=8"><%= image_tag "app-store-badge.svg" %></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="features" class="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="section-heading">
+                    <h2>Limited Features, Limited Fun</h2>
+                    <p class="text-muted">Check out the basic features and functionality of this app!</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="device-container">
+                    <div class="device-mockup iphone6_plus portrait white">
+                        <div class="device">
+                            <div class="screen">
+                                <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                                <%= image_tag('clipboard', class: "img-responsive") %> </div>
+                            <div class="button">
+                                <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="feature-item">
+                                <i class="fa fa-list text-primary"></i>
+
+                                <h3>Create Lists</h3>
+                                <p class="text-muted">Organize your tasks with customizable lists. Create todo items within each list. So fancy.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-item">
+                                <i class="fa fa-universal-access text-primary"></i>
+                                <h3>Responsive Design</h3>
+                                <p class="text-muted">This app has been painstakingly designed so that it works smoothly on any device or platform! </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="feature-item">
+                                <i class="fa fa-money text-primary"></i>
+                                <h3>Free to Use</h3>
+                                <p class="text-muted">In an unbelievable act of generosity, I decided to make Eventualii completely free to use. I am so awesome and kind.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-item">
+                                <i class="fa fa-file-code-o text-primary"></i>
+                                <h3>Open Source</h3>
+                                <p class="text-muted">Wanna see what's under the hood? The entire source code can be viewed on GitHub. (Spaghetti Code Warning)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="cta-content">
+        <div class="container">
+            <h2>Stop waiting.<br>Start procrastinating.</h2>
+            <%= link_to "Let's Get Started!", lists_path, class: "btn btn-outline btn-xl page-scroll" %>
+        </div>
+    </div>
+    <div class="overlay"></div>
+</section>
+
+<section id="contact" class="contact bg-primary">
+    <div class="container">
+        <h2>Share with friends!</h2>
+        <ul class="list-inline list-social">
+            <li class="social-twitter">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="social-facebook">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li class="social-google-plus">
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2017 Ryden Rails Project. All Rights Reserved.</p>
+        <ul class="list-inline">
+            <li>
+                <a href="#">Privacy</a>
+            </li>
+            <li>
+                <a href="#">Terms</a>
+            </li>
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+        </ul>
+    </div>
+</footer>
