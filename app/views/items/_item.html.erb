@@ -1,1 +1,6 @@
-<p><%= item.task %><%= link_to 'Destroy', list_item_path(@list, item.id), method: :delete, data: { confirm: 'Are you sure?' } %></p>
+<p><%= item.task %></p>
+<%= link_to 'Mark as Complete', complete_list_item_path(@list, item.id), method: :patch %>
+<%= link_to 'Destroy', list_item_path(@list, item.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+  <% if item.completed_at? %>
+    <p><%= item.completed_at %></p>
+  <% end %>
